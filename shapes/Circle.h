@@ -2,13 +2,13 @@
 #define H_CIRCLE_SHAPE
 #include "./Shape.h"
 
-class Circle:Shape {
+class Circle : public Shape {
     protected:
         double _radius;
 
     public:
         Circle(double radius);
-        double area();
+        double area() const override;
 };
 
 #endif

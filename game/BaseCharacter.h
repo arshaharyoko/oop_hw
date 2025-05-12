@@ -8,6 +8,7 @@ class BaseCharacter {
 
     public:
         void attack(BaseCharacter* target);
+        float getHealth();
 };
 
 #endif

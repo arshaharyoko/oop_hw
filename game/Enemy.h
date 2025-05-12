@@ -2,7 +2,7 @@
 #define H_ENEMY_BASECHARACTER
 #include "./BaseCharacter.h"
 
-class Enemy:BaseCharacter {
+class Enemy : public BaseCharacter {
     private:
         bool alive = true;
 

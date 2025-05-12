@@ -11,18 +11,25 @@ int main() {
         std::cin >> action;
 
         switch(action) {
-            case 1:
+            case 1: {
                 int deposit = 0;
                 std::cout << "Masukkan nominal untuk deposit: ";
                 std::cin >> deposit;
                 account.add_balance(deposit);
                 std::cout << "Balance is now " << account.get_balance() << std::endl;
-            case 2:
+                break;
+            }
+
+            case 2: {
                 int withdraw = 0;
                 std::cout << "Masukkan nominal untuk ditarik: ";
                 std::cin >> withdraw;
                 account.add_balance(-withdraw);
                 std::cout << "Balance is now " << account.get_balance() << std::endl;
+                break;
+            }
+            default:
+                std::cerr << "Action must be a valid option" << std::endl;
         }
         
         action = 0;

@@ -5,6 +5,6 @@ Rectangle::Rectangle(double length, double width) {
     _width = width;
 }
 
-double Rectangle::area() {
+double Rectangle::area() const {
     return _width*_length;
 }

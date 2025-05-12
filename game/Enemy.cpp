@@ -5,5 +5,5 @@ void Enemy::takeDamage(int damage) {
 }
 
 bool Enemy::isAlive() {
-    return Enemy::alive;
+    return health>0;
 }
